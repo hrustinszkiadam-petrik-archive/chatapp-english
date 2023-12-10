@@ -18,7 +18,7 @@ const People = () => {
 
 	return (
 		<div className='sm:scrollbar-custom mt-2 flex-grow flex-col overflow-y-auto'>
-			<h3 className='ml-2 font-bold xs:m-0 xs:hidden'>Your Conversations</h3>
+			<h3 className='ml-2 font-bold xs:hidden'>Your Conversations</h3>
 			{conversations.map((conversation) => {
 				return (
 					<Person
@@ -36,7 +36,7 @@ const People = () => {
 					/>
 				);
 			})}
-			<h3 className='ml-2 mt-10 font-bold xs:text-center'>
+			<h3 className='mt-10 font-bold sm:ml-2 xs:text-center'>
 				Discover People
 			</h3>
 			{online
