@@ -15,12 +15,6 @@ const WSProvider = ({ children }) => {
 		const _ws = new WebSocket('wss://chatapp-english-api.onrender.com');
 		setWs(_ws);
 		_ws.addEventListener('message', handleMessage);
-
-		return () => {
-			_ws.removeEventListener('message', handleMessage);
-			_ws.close();
-			setOnline([]);
-		};
 	}, []);
 
 	useEffect(() => {
