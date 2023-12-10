@@ -36,7 +36,9 @@ const People = () => {
 					/>
 				);
 			})}
-			<h3 className='ml-2 mt-10 font-bold'>Discover People</h3>
+			<h3 className='ml-2 mt-10 font-bold xs:text-center'>
+				Discover People
+			</h3>
 			{online
 				.filter(
 					(person) =>
