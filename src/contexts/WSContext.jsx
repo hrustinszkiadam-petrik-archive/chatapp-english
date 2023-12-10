@@ -41,8 +41,6 @@ const WSProvider = ({ children }) => {
 			setMessages(messageData.messages);
 		} else if ('conversations') {
 			setConversations(messageData.conversations);
-		} else if ('ping') {
-			ws?.send(JSON.stringify({ pong: true }));
 		}
 	};
 
