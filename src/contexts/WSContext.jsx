@@ -12,7 +12,7 @@ const WSProvider = ({ children }) => {
 	const [messages, setMessages] = useState([]);
 
 	useEffect(() => {
-		const _ws = new WebSocket('ws://chatapp-english-api.onrender.com');
+		const _ws = new WebSocket('wss://chatapp-english-api.onrender.com');
 		setWs(_ws);
 		_ws.addEventListener('message', handleMessage);
 
