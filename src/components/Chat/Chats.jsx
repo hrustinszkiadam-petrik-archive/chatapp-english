@@ -12,7 +12,7 @@ const Chats = () => {
 			<ChatsHeader />
 			<People />
 			<div className='sticky bottom-0 flex flex-col items-center justify-center px-4 py-4'>
-				<div className='flex-row'>
+				<div className='flex-row xs:hidden'>
 					<h3 className='inline-block'>Logged In as:</h3>
 					<span className='ml-2 inline-block font-semibold'>
 						<span className='mr-1'>{user.username}</span>
