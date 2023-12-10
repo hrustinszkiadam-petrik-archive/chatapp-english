@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.scrollbar-custom {
+		@apply scrollbar-thin scrollbar-track-gray-200 scrollbar-thumb-gray-400 lg:scrollbar;
+	}
+}
